@@ -1,6 +1,6 @@
 from json import dumps
 
-def hello_world(request):
+def trigger(request):
     """Responds to any HTTP request.
     Args:
         request (flask.Request): HTTP request object.
@@ -15,4 +15,4 @@ def hello_world(request):
     elif request_json:
         return dumps(request_json)
     else:
-        return f'Hello World!'
+        return 'Hello World!'
